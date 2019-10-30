@@ -1,5 +1,36 @@
+body {
+  text-align: center;
+  padding: 0 25px;
+}
+
 input {
   border: solid 1px black;
+  width: 100%;
+}
+
+#products {
+  margin-top: 35px;
+}
+
+.product {
+  display: flex;
+  margin: 15px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__name, .product__cost {
+  width: 20%;
+  text-align: left;
+}
+
+.product__qty {
+  display: flex;
+  align-items: center;
+}
+
+#qty {
+  margin-left: 5px;
 }
 
 .btn {
@@ -22,20 +53,40 @@ input {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
+  color: #fff;
+  background-color: lightgray;
 }
 
 .btn-success {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  margin-top: 15px;
 }
 
 .btn-delete {
-    color: #fff;
-    background-color: #CF000F;
-    border-color: #CF000F;
+  background-color: #cf000f;
+  border-color: #cf000f;
 }
 
 .quantity {
   margin: 0 5px;
+}
+
+#add-product {
+  display: flex;
+  align-items: center;
+}
+
+#add-product div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20%;
+  margin-right: 5%;
+}
+
+.btn-create {
+  color: black;
+  margin-left: auto;
+  margin-top: 10px;
 }
